@@ -16,9 +16,13 @@ int main() {
     rectangle.setHeight(50);
     std::cout <<  "Rectangle Area is " <<rectangle.getArea() << std::endl;
 
-    MoreRectangle moreRectangle;
+    MoreRectangle moreRectangle(10);
     moreRectangle.setWidth(50);
     moreRectangle.setHeight(50);
+    std::cout << "MoreRectangle Id is " << moreRectangle.getId() << std::endl;
     std::cout << "MoreRectangle Area is " << moreRectangle.getArea() << std::endl;
     std::cout << "MoreRectangle Cost is " << moreRectangle.getCost(moreRectangle.getArea()) << std::endl;
+
+    MoreRectangle moreIdRectangle;
+    std::cout << "moreIdRectangle Id is " << moreIdRectangle.getId() << std::endl;
 }

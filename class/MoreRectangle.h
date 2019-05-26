@@ -10,7 +10,12 @@
 
 class MoreRectangle : public Shape, public PaintCost{
 public:
+    MoreRectangle(int id = -100);
     int getArea();
+    int getId();
+
+private:
+    int mId;
 };
 
 

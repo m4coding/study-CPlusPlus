@@ -11,11 +11,14 @@
 class MoreRectangle : public Shape, public PaintCost{
 public:
     MoreRectangle(int id = -100);
+    MoreRectangle(const char* name, int id = -100);
     int getArea();
     int getId();
+    const char* getName();
 
 private:
     int mId;
+    const char* mName = "xxxx";
 };
 
 

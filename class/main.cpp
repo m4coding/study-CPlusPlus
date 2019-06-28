@@ -23,6 +23,8 @@ int main() {
     std::cout << "MoreRectangle Area is " << moreRectangle.getArea() << std::endl;
     std::cout << "MoreRectangle Cost is " << moreRectangle.getCost(moreRectangle.getArea()) << std::endl;
 
-    MoreRectangle moreIdRectangle;
+    MoreRectangle moreIdRectangle(100);
     std::cout << "moreIdRectangle Id is " << moreIdRectangle.getId() << std::endl;
+    std::cout << "moreIdRectangle name is " << moreIdRectangle.getName() << std::endl;
+
 }
